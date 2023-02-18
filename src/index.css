@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
+:root {
+    --main-color: #121213;
+    --yellow-color: #b0a33f;
+    --green-color: #6bad65;
+    --grey-color: #3a3a3c;
+}
+
+/* background-color: #121213; */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #121213;
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 2%;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1.2px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.Toastify__toast {
+    margin: 20px auto;
+    width: max-content;
+    min-height: 50px;
+}
+
+.Toastify__toast-body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Toastify__toast > button > svg {
+    display: none;
+}
+
+@keyframes dance {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.18);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Not using */
+@keyframes shake {
+    10% {
+        transform: translateX(-3%);
+    }
+
+    30% {
+        transform: translateX(3%);
+    }
+
+    50% {
+        transform: translateX(-5.5%);
+    }
+
+    70% {
+        transform: translateX(5.5%);
+    }
+
+    90% {
+        transform: translateX(-3%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
